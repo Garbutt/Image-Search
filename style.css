@@ -20,6 +20,19 @@ h1{
     font-weight: 600;
 }
 
+p{
+    margin: 100px auto 20px;
+    text-align: center;
+}
+
+a{
+    color: #f58939;
+}
+
+a::after{
+    color: #f58939;
+}
+
 form{
     width: 90%;
     max-width: 600px;
