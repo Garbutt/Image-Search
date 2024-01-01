@@ -6,8 +6,12 @@
 }
 
 body{
-    background: #39297b;
+    background: #090e25;
     color: #fff;
+}
+
+span{
+    color: #f58939;
 }
 
 h1{
@@ -21,7 +25,7 @@ form{
     max-width: 600px;
     margin: auto;
     height: 80px;
-    background: #434989;
+    background:  #e1e3e2 ;
     display: flex;
     align-items: center;
     border-radius: 8px;
@@ -33,7 +37,7 @@ form input{
     border: 0;
     outline: 0;
     background: transparent;
-    color: #fff;
+    color: #f58939;
     font-size: 18px;
     padding: 0 30px;
 }
@@ -41,7 +45,7 @@ form input{
 form button{
     padding: 0 40px;
     height: 100%;
-    background: #ff3929; 
+    background: #f58939; 
     color: #fff;
     font-size: 18px;
     border: 0;
@@ -51,12 +55,12 @@ form button{
     cursor: pointer;
 }
 ::placeholder{
-    color: #fff;
+    color: #f58939;
     font-size: 18px;
 }
 
 #showMoreBtn{
-    background: #ff3929;
+    background: #f58939;
     color: #fff;
     border: 0;
     outline: 0;
@@ -80,4 +84,32 @@ form button{
     height: 230px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+
+
+ /*Screens smaller than 600px */
+ @media only screen and (max-width: 600px){
+    form{
+        width: 60%;
+        height: 50px;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    form button{
+        width: 40%;
+        padding: 0 ;
+    }
+    #searchResult{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+ /*Screens smaller than 600px */
+@media only screen and (max-width: 500px){
+    #searchResult{
+        grid-template-columns: 1fr ;
+    }
 }
